@@ -1,0 +1,74 @@
+#menu-view {
+    background-color: rgba(5, 5, 5, 0.80);
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px black;
+    font-family: sans-serif;
+    height: 440px;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 42%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    z-index: 2;
+}
+
+#menu-view h3 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 3px gray;
+}
+
+#start-btn {
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-top: 50px;
+    padding: 3px 25px 3px 25px;
+}
+
+#start-btn:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.mode-selector {
+    display: flex;
+    flex-direction: column;
+}
+
+.mode-selector input[type="radio"] {
+    appearance: none;
+    display: none;
+}
+
+.mode-selector label {
+    background-image: linear-gradient(#0e4b67, #092b3b);
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px gray;
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 10px 0 10px 9%;
+    padding: 5px;
+    width: 80%;
+}
+
+.mode-selector label:hover {
+    background-image: linear-gradient(#19A7CE, #073440);
+    color: #120A8F;
+    cursor: pointer;
+}
+
+.mode-selector label:active {
+    box-shadow: 0 2px black;
+    color: #120A8F;
+    transform: translateY(4px);
+}
+
+.mode-selector input[type="radio"]:checked+label {
+    background-image: linear-gradient(#19A7CE, #073440);
+    color: #120A8F;
+}
